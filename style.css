@@ -1,5 +1,6 @@
 .container {
   border: 3px solid black;
+  width: 700px;
   height: 500px;
   display: flex;
 }
@@ -7,5 +8,7 @@
   border: 2px solid blue;
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+}
+.container .item:nth-child(n + 2) {
+  margin-left: 200px;
 }
