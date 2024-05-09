@@ -1,13 +1,13 @@
-.container {
-  border: 3px solid black;
-  width: 600px;
-  height: 500px;
-  display: flex;
-  padding: 0 50px;
+body {
+  font-size: 20px;
 }
-.item {
-  border: 2px solid blue;
-  width: 100px;
-  height: 100px;
-  margin: 0 50px;
+
+.section {
+  font-size: 15px;
+}
+.title {
+  font-size: 2em; /* 15*2px */
+}
+.subtitle {
+  font-size: 3em; /* 15*2*3 = 90px */
 }
