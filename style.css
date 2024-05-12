@@ -1,13 +1,19 @@
-body {
-  font-size: 20px;
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border: 1px solid red;
 }
-
-.section {
-  font-size: 15px;
+.container {
+  display: flex;
 }
-.title {
-  font-size: 2em; /* 15*2px */
+.box1 {
+  flex-grow: 1;
+  flex-shrink: 0;
 }
-.subtitle {
-  font-size: 3em; /* 15*2*3 = 90px */
+.box2 {
+  flex-grow: 2;
+}
+.box3 {
+  flex-grow: 2;
 }
