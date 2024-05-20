@@ -1,12 +1,14 @@
 /* 헤더 */
 :root {
   --main-color: #a63b14;
+  --btn-color: #f27b13;
   --main-radius: 0.4375rem;
 }
 
 header {
   background-color: #0e4c83;
   display: grid;
+  text-align: center;
   grid-template-columns: 2fr 4fr;
 
   .logo {
@@ -17,13 +19,29 @@ header {
     place-self: center;
   }
   .menu-bar {
-    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   .menu-item {
     width: 4.3125rem;
     height: 2.0625rem;
     border-radius: var(--main-radius);
     background-color: var(--main-color);
-    margin-right: 1.94rem;
+    margin: 1.06rem 1.94rem 1.06rem 0;
+  }
+}
+
+.grid-container {
+  background-color: #0e4c83;
+  h1,
+  h2,
+  p {
+    background-color: var(--main-color);
+  }
+
+  .button {
+    background-color: var(--btn-color);
   }
 }
