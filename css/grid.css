@@ -3,10 +3,13 @@
   --main-color: #a63b14;
   --btn-color: #f27b13;
   --main-radius: 0.4375rem;
+  margin: 0;
+  padding: 0;
 }
 
-body {
+.main-container {
   background-color: #0e4c83;
+  height: 100vh;
 }
 header {
   background-color: #0a375e;
@@ -16,6 +19,7 @@ header {
 
   .logo {
     width: 10.5rem;
+    min-width: 10rem;
     height: 2.0625rem;
     border-radius: var(--main-radius);
     background-color: var(--main-color);
@@ -39,11 +43,32 @@ header {
 .grid-container {
   h1,
   h2,
-  p {
+  p,
+  a {
+    margin-left: 20px;
     background-color: var(--main-color);
+    border-radius: 1.3125rem;
+  }
+  h1 {
+    width: 40%;
+  }
+  h2 {
+    width: 30%;
+  }
+  p {
+    margin-right: 20px;
   }
 
   .button {
-    background-color: var(--btn-color);
+    display: flex;
+    a {
+      background-color: var(--btn-color);
+      padding: 10px;
+    }
+  }
+
+  .fab {
+    font-size: 1.875rem;
+    color: white;
   }
 }
